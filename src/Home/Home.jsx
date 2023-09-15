@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const Home = () => {
     const [courses, setCourses] = useState([])
     const [selectCourse, setSelectCourse] = useState([])
+    const [cost, setCost] = useState(0)
     useEffect(()=>{
        fetch('/course.json')
        .then(res => res.json())
@@ -13,13 +14,16 @@ const Home = () => {
     },[])
 
     const handleSelect = (course) =>{
+        let count = course.credit
        const isExists = selectCourse.find(item=> item.id == course.id)
        if(isExists){
-        toast("Already Selected!", {
-            
-        });
+         toast.error("Already Selected!");
        }else{
-        setSelectCourse([...selectCourse, course]);
+         selectCourse.forEach(item=>{
+            count = count + item.credit
+         })
+         setCost(count)
+         setSelectCourse([...selectCourse, course]);
        }
       
     }
@@ -49,7 +53,7 @@ const Home = () => {
                 </div>
                 <div className="cart_container">
                     <div className="cart">
-                       <Cart selectCourse={selectCourse}></Cart>
+                       <Cart selectCourse={selectCourse} totalCost={cost}></Cart>
                     </div>
                 </div>
             </div>

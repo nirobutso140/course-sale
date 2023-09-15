@@ -1,6 +1,6 @@
 
 import './Cart.css'
-const Cart = ({selectCourse}) => {
+const Cart = ({selectCourse, totalCost}) => {
     console.log(selectCourse);
     return (
         <div>
@@ -15,7 +15,7 @@ const Cart = ({selectCourse}) => {
                }
             </ol>
             <hr />
-            <p>Total Credit Hour : </p>
+            <p>Total Credit Hour : {totalCost}</p>
             <hr />
             <p>Total Price : 48000 USD</p>
         </div>

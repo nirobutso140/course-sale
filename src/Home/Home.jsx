@@ -1,14 +1,21 @@
 import { useEffect, useState } from 'react';
 import './Home.css'
+import Cart from '../Cart/Cart';
 const Home = () => {
     const [courses, setCourses] = useState([])
+    const [selectCourse, setSelectCourse] = useState([])
     useEffect(()=>{
-       fetch('/public/course.json')
+       fetch('/course.json')
        .then(res => res.json())
        .then(data => setCourses(data))
     },[])
+
+    const handleSelect = (course) =>{
+       setSelectCourse([...selectCourse, course]);
+    }
     return (
-        <>
+        <> 
+           <h1 id='heading_title'>Course Registration</h1>
             <div className="container">
                 <div className="card_container">
 
@@ -22,7 +29,7 @@ const Home = () => {
                             <span>Price: {course.price}</span>
                             <span>Credit: {course.credit}</span>
                         </div><br />
-                        <button id='select_btn'>Select</button>
+                        <button onClick={()=>handleSelect(course)} id='select_btn'>Select</button>
                     </div>
                     ))
                 }
@@ -32,7 +39,7 @@ const Home = () => {
                 </div>
                 <div className="cart_container">
                     <div className="cart">
-                       <h1>Hello Mama</h1>
+                       <Cart selectCourse={selectCourse}></Cart>
                     </div>
                 </div>
             </div>

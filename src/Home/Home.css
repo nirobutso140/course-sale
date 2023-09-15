@@ -1,23 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&family=Lato:wght@400;700;900&family=Manrope:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700;900&family=Work+Sans:wght@400;500;600;700;800;900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background: #F3F3F3;
+}
+#heading_title{
+    text-align: center;
+    margin: 20px 0;
 }
 .container{
-    border: 1px solid rgb(2, 3, 5);
     display: flex;
     justify-content: center;
-    background: #F3F3F3;
+    
 }
 .card_container{
     display: flex;
     flex-wrap: wrap;
     width: 960px;
-    border: 1px solid blue;
 }
 .cart_container{
     width: 300px;
-    border: 1px solid orange;
 }
 .card{
     background-color: white;
@@ -33,5 +39,10 @@
 }
 #select_btn{
     width: 100%;
-    padding: 6px;
+    padding: 8px 0;
+    border: 0;
+    border-radius: 8px;
+    background: #2F80ED;
+    color: white;
+    cursor: pointer;
 }

@@ -7,6 +7,7 @@ const Home = () => {
     const [courses, setCourses] = useState([])
     const [selectCourse, setSelectCourse] = useState([])
     const [cost, setCost] = useState(0)
+    const [remainding, setRemainding] = useState(0)
     useEffect(()=>{
        fetch('/course.json')
        .then(res => res.json())
@@ -22,6 +23,8 @@ const Home = () => {
          selectCourse.forEach(item=>{
             count = count + item.credit
          })
+         const remainderCredit = 20 - count
+         setRemainding(remainderCredit)
          setCost(count)
          setSelectCourse([...selectCourse, course]);
        }
@@ -53,7 +56,7 @@ const Home = () => {
                 </div>
                 <div className="cart_container">
                     <div className="cart">
-                       <Cart selectCourse={selectCourse} totalCost={cost}></Cart>
+                       <Cart selectCourse={selectCourse} totalCost={cost} remainder={remainding}></Cart>
                     </div>
                 </div>
             </div>

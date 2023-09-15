@@ -1,10 +1,10 @@
 
 import './Cart.css'
-const Cart = ({selectCourse, totalCost}) => {
+const Cart = ({selectCourse, totalCost, remainder}) => {
     console.log(selectCourse);
     return (
         <div>
-            <p className='Remaining'>Credit Hour Remaining hr </p>
+            <p className='Remaining'>Credit Hour Remaining {remainder} hr </p>
             <hr />
             <p className='course_name'>Course Name</p>
             <ol className='course_name_list'>

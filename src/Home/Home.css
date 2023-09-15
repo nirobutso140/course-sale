@@ -36,6 +36,14 @@ body{
 }
 .card img{
     width: 250px;
+    margin-bottom: 15px;
+}
+.card_title{
+    font-weight: bolder;
+}
+.card_desc{
+    font-size: 0.9rem;
+    color: gray;
 }
 #select_btn{
     width: 100%;

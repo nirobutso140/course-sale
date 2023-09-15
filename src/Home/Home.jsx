@@ -22,9 +22,9 @@ const Home = () => {
                 {
                     courses.map(course =>(
                         <div key={course.id} className="card">
-                        <img src={course.image} alt="" /><br />
-                        <p>{course.coursename}</p><br/>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p><br />
+                        <img src={course.image} alt="" />
+                        <p className='card_title'>{course.coursename}</p><br/>
+                        <p className='card_desc'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p><br />
                         <div className='price_credit'>
                             <span>Price: {course.price}</span>
                             <span>Credit: {course.credit}</span>

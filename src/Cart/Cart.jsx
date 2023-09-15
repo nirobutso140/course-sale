@@ -10,7 +10,7 @@ const Cart = ({selectCourse, totalCost, remainder}) => {
             <ol className='course_name_list'>
                {
                  selectCourse.map(item =>(
-                        <li>{item.coursename}</li>
+                        <li key={item.id}>{item.coursename}</li>
                  )) 
                }
             </ol>

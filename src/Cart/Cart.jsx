@@ -4,7 +4,7 @@ const Cart = ({selectCourse}) => {
     console.log(selectCourse);
     return (
         <div>
-            <p className='Remaining_hr'>Credit Hour Remaining hr </p>
+            <p className='Remaining'>Credit Hour Remaining hr </p>
             <hr />
             <p className='course_name'>Course Name</p>
             <ol className='course_name_list'>
@@ -14,6 +14,10 @@ const Cart = ({selectCourse}) => {
                  )) 
                }
             </ol>
+            <hr />
+            <p>Total Credit Hour : </p>
+            <hr />
+            <p>Total Price : 48000 USD</p>
         </div>
     );
 };

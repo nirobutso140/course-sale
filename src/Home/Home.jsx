@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import './Home.css'
 import Cart from '../Cart/Cart';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Home = () => {
     const [courses, setCourses] = useState([])
     const [selectCourse, setSelectCourse] = useState([])
@@ -11,7 +13,15 @@ const Home = () => {
     },[])
 
     const handleSelect = (course) =>{
-       setSelectCourse([...selectCourse, course]);
+       const isExists = selectCourse.find(item=> item.id == course.id)
+       if(isExists){
+        toast("Already Selected!", {
+            
+        });
+       }else{
+        setSelectCourse([...selectCourse, course]);
+       }
+      
     }
     return (
         <> 
@@ -23,8 +33,8 @@ const Home = () => {
                     courses.map(course =>(
                         <div key={course.id} className="card">
                         <img src={course.image} alt="" />
-                        <p className='card_title'>{course.coursename}</p><br/>
-                        <p className='card_desc'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p><br />
+                        <p className='card_title'>{course.coursename}</p>
+                        <p className='card_desc'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                         <div className='price_credit'>
                             <span>Price: {course.price}</span>
                             <span>Credit: {course.credit}</span>
@@ -43,6 +53,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <ToastContainer />
         </>
     );
 };

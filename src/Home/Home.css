@@ -40,10 +40,12 @@ body{
 }
 .card_title{
     font-weight: bolder;
+    margin-bottom: 15px;
 }
 .card_desc{
     font-size: 0.9rem;
-    color: gray;
+    color: rgb(104, 104, 104);
+    margin-bottom: 15px;
 }
 #select_btn{
     width: 100%;

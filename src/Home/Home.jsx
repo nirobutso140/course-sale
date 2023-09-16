@@ -24,9 +24,14 @@ const Home = () => {
             count = count + item.credit
          })
          const remainderCredit = 20 - count
-         setRemainding(remainderCredit)
-         setCost(count)
-         setSelectCourse([...selectCourse, course]);
+         if(count > 20 && remainderCredit < 0){
+            toast.error("You cannot select more than 20 credits");
+         }else{
+            setRemainding(remainderCredit)
+            setCost(count)
+            setSelectCourse([...selectCourse, course]);
+         }
+
        }
       
     }

@@ -51,7 +51,7 @@ const Home = () => {
                         <p className='card_desc'>{course.details}</p>
                         <div className='price_credit'>
                             <span> <BsCurrencyDollar/> Price: {course.price}</span>
-                            <span> <BsBook/> Credit: {course.credit}</span>
+                            <span> <BsBook/> Credit: {course.credit}hr</span>
                         </div><br />
                         <button onClick={()=>handleSelect(course)} id='select_btn'>Select</button>
                     </div>

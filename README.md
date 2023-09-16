@@ -3,7 +3,7 @@ Extra feature of this project
 -> Search the required course
 -> Feedback rating system
 
-managed the state in my assignment project:
+Managed the state in my assignment project:
 -------------------------------------------
 1. After dynamically loading the data, I set the state inside to hold that data. 
 2. When the courses are selected, I have declared a second state to keep the courses. 

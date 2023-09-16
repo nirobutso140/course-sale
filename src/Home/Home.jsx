@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { BsBook } from "react-icons/bs";
+import { BsCurrencyDollar } from "react-icons/bs";
 import './Home.css'
 import Cart from '../Cart/Cart';
 import { ToastContainer, toast } from 'react-toastify';
@@ -48,8 +50,8 @@ const Home = () => {
                         <p className='card_title'>{course.coursename}</p>
                         <p className='card_desc'>{course.details}</p>
                         <div className='price_credit'>
-                            <span>  Price: {course.price}</span>
-                            <span>Credit: {course.credit}</span>
+                            <span> <BsCurrencyDollar/> Price: {course.price}</span>
+                            <span> <BsBook/> Credit: {course.credit}</span>
                         </div><br />
                         <button onClick={()=>handleSelect(course)} id='select_btn'>Select</button>
                     </div>

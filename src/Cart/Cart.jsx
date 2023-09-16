@@ -15,9 +15,9 @@ const Cart = ({selectCourse, totalCost, remainder}) => {
                }
             </ol>
             <hr />
-            <p>Total Credit Hour : {totalCost}</p>
+            <p><span className='amount'>Total Credit Hour</span> : {totalCost}</p>
             <hr />
-            <p>Total Price : 48000 USD</p>
+            <p><span className='amount'>Total Price</span> : 48000 USD</p>
         </div>
     );
 };

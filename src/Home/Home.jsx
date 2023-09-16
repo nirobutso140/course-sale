@@ -48,7 +48,7 @@ const Home = () => {
                         <p className='card_title'>{course.coursename}</p>
                         <p className='card_desc'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                         <div className='price_credit'>
-                            <span>Price: {course.price}</span>
+                            <span>  Price: {course.price}</span>
                             <span>Credit: {course.credit}</span>
                         </div><br />
                         <button onClick={()=>handleSelect(course)} id='select_btn'>Select</button>

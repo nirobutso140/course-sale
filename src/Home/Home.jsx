@@ -46,7 +46,7 @@ const Home = () => {
                         <div key={course.id} className="card">
                         <img src={course.image} alt="" />
                         <p className='card_title'>{course.coursename}</p>
-                        <p className='card_desc'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        <p className='card_desc'>{course.details}</p>
                         <div className='price_credit'>
                             <span>  Price: {course.price}</span>
                             <span>Credit: {course.credit}</span>

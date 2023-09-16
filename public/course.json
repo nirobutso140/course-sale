@@ -3,7 +3,7 @@
       "id": 1,
       "image": "image/1.png",
       "coursename": "Python Basic to Advance",
-      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "details": " Python is widely used in various fields, including web development, data analysis, machine learning, scientific computing, and more.",
       "price": 49.99,
       "credit": 3
     },
@@ -11,7 +11,7 @@
       "id": 2,
       "image": "image/2.png",
       "coursename": "Database with MySql",
-      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "details": "MySQL, like other relational database management systems (RDBMS), is needed for a variety of reasons in software development and data management.",
       "price": 149.99,
       "credit": 5
     },
@@ -19,7 +19,7 @@
       "id": 3,
       "image": "image/3.png",
       "coursename": "Fundamental Of C",
-      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "details": "Learning C gives you a strong foundation in programming concepts and principles, which can be applied to other languages more easily.",
       "price": 79.99,
       "credit": 4
     },
@@ -27,7 +27,7 @@
       "id": 4,
       "image": "image/4.png",
       "coursename": "Introduction to Algorithms",
-      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "details": "Algorithms provide a structured approach to breaking down complex problems into smaller, manageable steps.",
       "price": 99.99,
       "credit": 4
     },
@@ -35,7 +35,7 @@
       "id": 5,
       "image": "image/5.png",
       "coursename": "Introduction To C++",
-      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "details": "C++ is the foundation of the C programming language while adding features for object-oriented programming (OOP). ",
       "price": 59.99,
       "credit": 3
     },
@@ -43,7 +43,7 @@
       "id": 6,
       "image": "image/6.png",
       "coursename": "Software Engineering",
-      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "details": "Learning software engineering is valuable for several reasons, as it equips you with essential skills and knowledge that can benefit both your career and your ability to create high-quality software.",
       "price": 69.99,
       "credit": 3
     },
@@ -51,7 +51,7 @@
       "id": 7,
       "image": "image/7.png",
       "coursename": "Problem-Solving Part",
-      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "details": "Problem-solving is a crucial skill that is valuable in virtually every aspect of life, including personal, professional, and academic contexts.",
       "price": 39.99,
       "credit": 2
     },
@@ -59,7 +59,7 @@
       "id": 8,
       "image": "image/8.png",
       "coursename": "Basic Data Structures",
-      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "details": "Data structures provide organized and efficient ways to store and manage data. ",
       "price": 119.99,
       "credit": 5
     },
@@ -67,7 +67,7 @@
       "id": 9,
       "image": "image/9.png",
       "coursename": "AWS, Cloud Computing",
-      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "details": "Learning Amazon Web Services (AWS) is highly beneficial for various reasons, especially in the context of cloud computing and modern technology.",
       "price": 89.99,
       "credit": 4
     }
